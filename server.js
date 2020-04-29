@@ -7,9 +7,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-let movies = require('./v3/routes/movies');
-let category = require('./v3/routes/category');
-let yandex = require('./v3/routes/yandex');
+let movies = require('./routes/movies');
+let category = require('./routes/category');
+let yandex = require('./routes/yandex');
 
 app.use(movies);
 app.use(category);
