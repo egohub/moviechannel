@@ -10,10 +10,12 @@ app.use(bodyParser.urlencoded({
 let movies = require('./routes/movies');
 let category = require('./routes/category');
 let yandex = require('./routes/yandex');
+let xxx = require('./routes/xxx');
 
 app.use(movies);
 app.use(category);
 app.use(yandex);
+app.use(xxx);
 
 const port = process.env.PORT || 3000;
 
