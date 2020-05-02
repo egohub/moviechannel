@@ -6,9 +6,9 @@ const baseUrl = 'https://channelmyanmar.org/movies/',
     pageUrl = 'https://channelmyanmar.org/movies/page/';
 
 
-router.get('/', function(req, res) {
-    res.send('Hello  Movies');
-});
+// router.get('/', function(req, res) {
+//     res.send('Hello  Movies');
+// });
 
 router.get('/post', (req, res, next) => {
     let url = baseUrl || baseUrl + req.query.id;
