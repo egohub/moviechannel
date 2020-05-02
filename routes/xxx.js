@@ -100,6 +100,7 @@ router.get('/xxx/:id', function(req, res) {
     x(shortUrl, {
             title: 'h1',
             category: 'i.limpiar',
+            img: 'img[itemprop="image"]@src',
             uploadDate: 'meta[itemprop="uploadDate"]@content',
             src: '.realse script@html | xxx | atobUTF8 | atobUTF8 | iframe',
         })
