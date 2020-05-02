@@ -1,0 +1,17 @@
+<ion-view title="Korea" hide-back-button="true" id="page2">
+    <ion-content padding="false" class="has-header">
+        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+
+        <ion-list id="movies-list4" ng-repeat="m in posts">
+            <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabsController.setdetail({id:m.id})">
+                <img src="{{m.img}}">
+                <h2>{{m.title}}</h2>
+                <p style="white-space:normal;">{{m.details.uploadDate | date:'yyyy-mm-dd'}}
+                    <br> This is a sample. Cox this is know as sample. Ok</p>
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll ng-if="moreDataExists()" on-infinite="loadMore()" distance="1%" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
