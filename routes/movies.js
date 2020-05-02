@@ -71,7 +71,7 @@ router.get('/movie/:id', function(req, res) {
     x(base + req.params.id, {
             title: 'title',
             img: '.fix img@src',
-            description: '#cap1 | decs',
+            description: '#cap1',
             category: 'i.limpiar',
             uploadDate: 'meta[itemprop="uploadDate"]@content',
             embedUrl: 'meta[itemprop="embedUrl"]@content',
