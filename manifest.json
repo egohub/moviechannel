@@ -1,7 +1,7 @@
 {
     "name": "Xray Movie",
     "short_name": "XRay",
-    "start_url": "index.html",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#3f51b5",
     "theme_color": "#3f51b5",
