@@ -2,8 +2,8 @@ angular.module('app.controllers', [])
 
 .controller('homeCtrl', function($scope, $timeout, $log, MovieService, config, DataLoader) {
 
-    var singlePostApi = 'https://moviechannel.herokuapp.com//movies',
-        postsApi = 'https://channelmyanmar.org/wp-json/wp/v2/posts/';
+    var singlePostApi = 'https://moviechannel.herokuapp.com/movies',
+        postsApi = 'wp-json/wp/v2/posts/';
     $scope.moreItems = false;
 
     $scope.loadPosts = function() {
