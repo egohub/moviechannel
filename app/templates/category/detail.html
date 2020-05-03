@@ -1,0 +1,66 @@
+<!-- <ion-view title="{{news.title}}" id="page5">
+    <ion-content padding="true" class="has-header has-subheader">
+        <div>
+            <img ng-src="{{news.img}}" style="display: block; width: 100%; height: 270px; margin-left: auto; margin-right: auto;">
+        </div>
+        <a class="item" href="{{p.url}}" target="_blank" ng-repeat="p in news.download">{{p.site}}<span class="badge badge-assertive">{{p.size}}</span> </a>
+        <div class="spacer" style="width: 300px; height: 53px;"></div>
+        <a class="item-icon-left assertive item" href="{{p.url}}" target="_blank" ng-repeat="p in news.mega"><i class="icon ion-ios-play"></i>Mega.nz (Only PC)</a>
+        <a class="item-icon-left assertive item" ui-sref="tabsController.watch({id:p.url})" ng-repeat="p in news.yadi"><i class="icon ion-ios-play"></i>Yandex (PC and Mobile)</a>
+    </ion-content>
+</ion-view> -->
+
+<ion-view title="{{data.title}}" id="page5">
+    <ion-content padding="true" class="has-header has-subheader">
+
+        <div>
+            <img ng-src="{{data.img}}" style="display: block; width: 100%; height: 270px; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="button-bar bar-positive">
+            <a class="button button-tabs" ng-class="{'active': tabName=='Overview'}" ng-click="tabName='Overview'">
+                Overview
+            </a>
+            <a class="button button-tabs" ng-class="{'active': tabName=='tab3'}" ng-click="tabName='tab3'">
+                Download
+            </a>
+            <a class="button button-tabs" ng-class="{'active': tabName=='tab2'}" ng-click="tabName='tab2'">
+                Info
+            </a>
+            <a class="button button-tabs" ng-class="{'active': tabName=='tab4'}" ng-click="tabName='tab4'">
+                Trailer
+            </a>
+        </div>
+
+
+        <div ng-switch="tabName">
+            <div ng-switch-when="Overview">
+                <p>{{data.description}}</p>
+            </div>
+            <div class="card" ng-switch-when="tab2">
+                <ion-list>
+                    <ion-item ng-init="g=data.category">Genre<span class="badge badge-assertive">{{g}}</span> </ion-item>
+                    <ion-item ng-init="d=data.director">Director<span class="badge badge-assertive">{{d}}</span> </ion-item>
+                </ion-list>
+
+                <!-- <span class="badge badge-assertive">{{data.category}}</span> -->
+            </div>
+            <div ng-switch-when="tab3">
+                <div class="spacer" style="width: 300px; height: 30px;"></div>
+                <ion-list>
+                    <ion-item ng-repeat="d in data.download">{{d.site}}<span class="badge badge-assertive">{{d.size}}</span> </ion-item>
+                </ion-list>
+                <div class="spacer" style="width: 300px; height: 15px;"></div>
+
+                <ion-list>
+                    <a class="item-icon-left assertive item" href="{{p.url}}" target="_blank" ng-repeat="p in data.mega"><i class="icon ion-ios-play"></i>Mega.nz (Only PC)</a>
+                    <a class="item-icon-left assertive item" ui-sref="tabsController.watch({id:p.url})" ng-repeat="p in data.yadi"><i class="icon ion-ios-play"></i>Yandex (PC and Mobile)</a>
+                </ion-list>
+            </div>
+            <div class="card" ng-switch-when="tab4">
+                <div ng-init="tube=data.embedUrl+'?rel=0&amp;showinfo=0'" style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="setting-video1">
+                    <iframe src="{{data.embedUrl}}" frameborder="0" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
