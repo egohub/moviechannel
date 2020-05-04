@@ -69,7 +69,7 @@ router.get('/movies/page/:id', function(req, res) {
 router.get('/movie/:id', function(req, res) {
     console.log(base + req.params.id);
     x(base + req.params.id, {
-            title: 'title',
+            title: '.fix img@alt | regex',
             img: '.fix img@src',
             description: '#cap1',
             category: 'i.limpiar',
