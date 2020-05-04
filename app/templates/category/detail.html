@@ -47,7 +47,7 @@
             <div ng-switch-when="tab3">
                 <div class="spacer" style="width: 300px; height: 30px;"></div>
                 <ion-list>
-                    <ion-item ng-repeat="d in data.download">{{d.site}}<span class="badge badge-assertive">{{d.size}}</span> </ion-item>
+                    <ion-item href="{{d.url}}" target="_blank" ng-repeat="d in data.download">{{d.site}}<span class="badge badge-assertive">{{d.size}}</span> </ion-item>
                 </ion-list>
                 <div class="spacer" style="width: 300px; height: 15px;"></div>
 
