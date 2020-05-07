@@ -28,3 +28,16 @@ body {
 .button-tabs {
     font-size: 12px;
 }
+
+@font-face {
+    font-family: "NotoZawDecode";
+    src: local('Noto Sans Myanmar UI'), url('ZawDecode.ttf') format('truetype');
+}
+
+.mmtext {
+    font-family: "NotoZawDecode";
+    font-size: 16px;
+    line-height: 1.8em;
+    text-indent: 5px;
+    text-align: justify;
+}
