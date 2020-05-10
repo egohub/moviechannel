@@ -29,6 +29,7 @@ body {
     font-size: 12px;
 }
 
+
 .platform-ios {
 
   ion-content.scroll-content.ionic-scroll .scroll {
@@ -53,3 +54,17 @@ body {
   height: calc(constant(safe-area-inset-bottom) + 49px);
   height: calc(env(safe-area-inset-bottom) + 49px);
 }
+
+@font-face {
+    font-family: "NotoZawDecode";
+    src: local('Noto Sans Myanmar UI'), url('ZawDecode.ttf') format('truetype');
+}
+
+.mmtext {
+    font-family: "NotoZawDecode";
+    font-size: 16px;
+    line-height: 1.8em;
+    text-indent: 5px;
+    text-align: justify;
+}
+

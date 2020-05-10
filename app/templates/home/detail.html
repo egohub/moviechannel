@@ -1,9 +1,13 @@
-<ion-view title="{{data.title}}" id="page5">
+<ion-view title="" id="page5">
+    <div class="bar bar-subheader bar-positive">
+        <h2 class="title">{{data.title}}</h2>
+    </div>
     <ion-content padding="true" class="has-header has-subheader">
 
         <div>
             <img ng-src="{{data.img}}" style="display: block; width: 100%; height: 270px; margin-left: auto; margin-right: auto;">
         </div>
+        <div class="spacer" style="width: 300px; height: 15px;"></div>
         <div class="button-bar bar-positive">
             <a class="button button-tabs" ng-class="{'active': tabName=='Overview'}" ng-click="tabName='Overview'">
                 Overview
@@ -21,8 +25,9 @@
 
 
         <div ng-switch="tabName">
+            <div class="spacer" style="width: 300px; height: 15px;"></div>
             <div ng-switch-when="Overview">
-                <p>{{data.description}}</p>
+                <p class="mmtext">{{data.description}}</p>
             </div>
             <div class="card" ng-switch-when="tab2">
                 <ion-list>
@@ -45,6 +50,7 @@
                 </ion-list>
             </div>
             <div class="card" ng-switch-when="tab4">
+                <div class="spacer" style="width: 300px; height: 15px;"></div>
                 <div ng-init="tube=data.embedUrl+'?rel=0&amp;showinfo=0'" style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="setting-video1">
                     <iframe src="{{data.embedUrl}}" frameborder="0" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                 </div>
