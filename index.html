@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+    
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,minimal-ui,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,minimal-ui">
     <title></title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -11,9 +12,9 @@
     <meta name="msapplication-TileImage" content="xray.png">
     <meta name="theme-color" content="#3f51b5">
     <meta name="application-name" content="Movies">
-    <meta name="apple-touch-icon" sizes="192x192" href="/xray-192.png">
+    <link rel="apple-touch-icon" href="xray.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" sizes="192x192" href="xray-192.png">
+    <link rel="icon" href="xray-192.png" type="image/x-icon">
     <meta name="theme-color" content="#3f51b5">
     <link href="lib/ionic.css" rel="stylesheet">
 
@@ -1506,14 +1507,21 @@
                 <ion-nav-view></ion-nav-view>
             </ion-side-menu-content>
             <ion-side-menu side="left" id="side-menu21">
-                <ion-header-bar class="bar-positive">
+                <!--ion-header-bar class="bar-positive">
                     <div class="title">Menu</div>
-                </ion-header-bar>
-                <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+                </ion-header-bar>-->
+                <ion-content ng-controller="menuCtrl" padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+                
+        <div class="spacer" data-componentid="spacer4" style="width: 268px; height: 38px;"></div>
+        <div class="profile-image" data-componentid="image5">
+          <img src="xray.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+                
+                
                     <ion-list id="menu-list2" data-componentid="list2">
-                        <ion-item id="menu-list-item14" ui-sref="tabsController.home()" menu-close="" data-componentid="list-item14">Home</ion-item>
-                        <ion-item id="menu-list-item15" ui-sref="tabsController.category()" menu-close="" data-componentid="list-item15">Category</ion-item>
-                        <ion-item id="menu-list-item16" ui-sref="tabsController.setting()" menu-close="" data-componentid="list-item16">Korea</ion-item>
+                        <ion-item id="menu-list-item14" ui-sref="tabsController.home()" class="side-menu-item" menu-close="" data-componentid="list-item14">Home</ion-item>
+                        <ion-item id="menu-list-item15" ui-sref="tabsController.category()" class="side-menu-item" menu-close="" data-componentid="list-item15">Category</ion-item>
+                        <ion-item id="menu-list-item16" ui-sref="tabsController.setting()" menu-close="" class="side-menu-item" data-componentid="list-item16">Korea</ion-item>
                     </ion-list>
                 </ion-content>
             </ion-side-menu>
