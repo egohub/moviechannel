@@ -1,0 +1,78 @@
+<ion-view title="About" id="page9">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-android-more-vertical"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <h3 id="about-heading1" style="color:#000000;text-align:center;">About Application</h3>
+    <div id="about-markdown3" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">This is test Project
+        <strong>Movie Application</strong>.</p>
+
+      <p style="color:#000000;">Server use
+        <code>Express.js</code>. Data from Channelmyanmar.org and webscrape data with
+        <code>x-ray.js</code> .</p>
+
+      <p style="color:#000000;">Frontend used ionicframework and
+        <code>angular.js</code> .</p>
+
+      <p style="color:#000000;">Anyone can use free data . Check api Endpoint.</p>
+    </div>
+    <div class="list card" id="about-card22">
+      <ion-item class="item-divider" id="about-list-item-divider1"> Movies</ion-item>
+      <div class="item item-body" id="about-list-item-container4">
+        <div id="about-markdown5" class="show-list-numbers-and-dots">
+          <blockquote>
+            <p style="margin-top:0px;color:#000000;">Get all
+              <strong>Movies</strong>
+            </p>
+          </blockquote>
+
+          <p style="color:#000000;">
+            <code>https://moviechannel.herokuapp.com/movies</code>
+          </p>
+        </div>
+      </div>
+      <!-- <ion-item class="item-icon-left energized" id="about-list-item25">
+        <i class="icon ion-social-javascript"  ng-click="getSampleData()"></i>Get Movies</ion-item> -->
+        <button id="about-button24" class="button button-assertive" ng-click="getSampleData()">GET DATA</button>
+      <!-- <pre>
+        <code>
+          { "title": Movies , "thisPage": 1, "nextPage": "movies/page/1", "totalPageCount": 300, "results": [ { "title" : "Movies Title 1", "gnere": "Action, Aventure", "image": "https://example.com/movietitle1.jpg", "release_date": "10-04-2020" } ] }
+        </code>
+
+      </pre> -->
+      <pre><code>{{sample | json}}</code></pre>
+    </div>
+    <div class="list card" id="about-card23">
+      <ion-item class="item-divider" id="about-list-item-divider2"> Movie Page</ion-item>
+      <div id="about-markdown10" class="show-list-numbers-and-dots">
+        <blockquote>
+          <p style="color:#000000;">Get l
+            <strong>Movies Page</strong>
+          </p>
+        </blockquote>
+
+        <p style="color:#000000;">
+          <code>https://moviechannel.herokuapp.com/movies/page/1</code>
+        </p>
+      </div>
+      <div class="item item-body" id="about-list-item-container6">
+        <div id="about-markdown7" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Some friendly
+            <strong>markdown</strong>
+          </p>
+
+          <p style="color:#000000;">
+            <code></code>` json { "title": Movies , "thisPage": 1, "nextPage": "movies/page/1", "totalPageCount": 300, "results": [ { "title" : "Movies Title 1", "gnere": "Action, Aventure", "image": "https://example.com/movietitle1.jpg", "release_date": "10-04-2020"
+            } ]
+          </p>
+
+          <p style="color:#000000;"> }
+            <code></code>`</p>
+        </div>
+      </div>
+      <button id="about-button24" class="button button-assertive button-block icon-left ion-code">GET DATA</button>
+    </div>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+  </ion-content>
+</ion-view>

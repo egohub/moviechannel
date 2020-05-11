@@ -1,0 +1,17 @@
+<!-- <ion-view title="Watch" id="page6">
+  <ion-content padding="true" class="has-header">
+    <iframe src="https://egohub.github.io/watch/?video=https://streaming.disk.yandex.net/hls/U2FsdGVkX18r0OaRDF50LxU1819MF4TSgEKPk-7uiLhYw30mbV3M-El4mQwp_IDWLFAdHS2xiEwlraynBQixg0Xl5JpWoWc86LVB-Jcp-eLj86cxfQAxe4HIg8WnMs6ykzDFH-Emk1zXPpSAWkaWIagUtSurA1jaPzMWcq6Tq3B1IYr8wCZHTJM2xdH6sRGOl0rUQDhFSMPUbZQy8iuodCNHw9gMwSuArt_d3_mCyuyoh9GlJnjQwvDIYwyhe5VxbPSGvlH9OjLSHPg04a_RgRgaDD7oe7tnem1CBiLVXWaMkCgZH9r0MEzRE5VFJnmR/5a37f2fda5870/8a7084f9626fc843e745047b853bf2ce766d8773b9ce89bf141bb84ab100effb/720p/playlist.m3u8"></iframe>
+    <iframe src="https://playerapi.com/vid/8e08fe541b935c84f4f6e034c261fd12"></iframe>
+  </ion-content>
+</ion-view> -->
+
+<ion-view title="" id="page6">
+  <ion-content padding="true" class="has-header">
+      <!-- Watch -->
+      <ion-title>{{data.title}}</ion-title>
+      <a href="https://egohub.github.io/watch/?video={{p.url}}" target="_blank" ng-repeat="p in data.info" class="button button-assertive button-block">Watch ({{p.dimension}}) 
+    </a>
+
+
+  </ion-content>
+</ion-view>
