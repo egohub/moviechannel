@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "NotoZawDecode";
+    src: local('Noto Sans Myanmar UI'), url('ZawDecode.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: local('Righteous'), url('Righteous-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Stardos";
+    src: local('Stardos'), url('StardosStencil-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Teko";
+    src: local('Teko'), url('Teko-Medium.ttf') format('truetype');
+}
+
+
+/* Stardos Stencil */
+
+.mmtext {
+    font-family: "NotoZawDecode";
+    font-size: 16px;
+    line-height: 1.8em;
+    text-indent: 5px;
+    /* text-align: justify; */
+}
+
+.titletext {
+    font-family: "Righteous";
+}
+
+.cattext {
+    font-family: Stardos;
+}
+
+.kortext {
+    font-family: Teko;
+}
+
+.ion-navicon {
+    color: #fff;
+}
+
+body {
+    background-color: #3F51B5;
+    background-attachment: fixed;
+    /* background: -webkit-linear-gradient(left top, #3F51B5, #673AB7);
+    background: -o-linear-gradient(bottom right, #3F51B5, #673AB7);
+    background: -moz-linear-gradient(bottom right, #3F51B5, #673AB7);
+    background: linear-gradient(to bottom right, #3F51B5, #673AB7);
+    background-image: linear-gradient(to bottom right, #3F51B5, #673AB7); */
+}
+
+.tabs-positive>.tabs,
+.tabs.tabs-positive {
+    background: -o-linear-gradient(bottom right, #3F51B5, #673AB7);
+    background: -moz-linear-gradient(bottom right, #3F51B5, #673AB7);
+    background: linear-gradient(to bottom right, #3F51B5, #673AB7);
+    background-image: linear-gradient(to bottom right, #3F51B5, #673AB7);
+}
+
+.bar-positive .button.active,
+.bar-positive .button.activated {
+    color: #E91E63;
+}

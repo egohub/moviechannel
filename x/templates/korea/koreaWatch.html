@@ -1,0 +1,24 @@
+<!-- <ion-view title="Korea Watch" id="page11">
+  <ion-content padding="false" class="has-header">
+    <iframe src="https://mega.nz/embed/Rc9ThQKR#ur28irXK42IG0KVk_q2vuJ-265zwBNVKmQB2hsGueAM" width="100%" height="360" frameborder="0" allowfullscreen=""></iframe>
+    <div id="koreaWatch-markdown9" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Some friendly
+        <strong>markdown</strong>
+      </p>
+    </div>
+    <div ng-init="videourl_video1=&quot;https://www.youtube.com/embed/lTLTs2ZA2JQ?rel=0&amp;showinfo=0&quot;" style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="koreaWatch-video1">
+      <iframe src="{{videourl_video1}}" frameborder="0" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <button id="koreaWatch-button25" class="button button-assertive button-block">Watch External</button>
+  </ion-content>
+</ion-view> -->
+
+<ion-view title="{{news.title}}" id="page5">
+  <ion-content padding="true" class="has-header has-subheader">
+      <div>
+      </div>
+      <iframe src="{{news.src}}" frameborder="0" allowfullscreen="" width="100%" height="315"></iframe>
+      <div class="spacer" style="width: 300px; height: 53px;"></div>
+      <a class="item-icon-left assertive item" href="{{news.src}}" target="_blank"><i class="icon ion-ios-play"></i>Watch</a>
+  </ion-content>
+</ion-view>

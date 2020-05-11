@@ -1,0 +1,17 @@
+<ion-view title="" hide-back-button="true" id="page2">
+    <ion-content padding="false" class="has-header">
+        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+
+        <ion-list id="movies-list4">
+            <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabs.homeDetail({slug:m.slug})" ng-repeat="m in posts">
+                <img ng-src="{{m.img}}" on-error-src="img/loading.gif" />
+                <h2 class="titletext">{{m.title}}</h2>
+                <p style="white-space:normal;"> <br><span class="kortext">{{m.year}}</span> <br> <span class="badge badge-assertive">{{m.rate}} </span>
+                </p>
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll ng-if="moreDataExists()" on-infinite="loadMore()" distance="1%" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,248 @@
+[
+    {
+        "title": "007",
+        "id": "007",
+        "url": "http://localhost:3000/category/007/",
+        "count": 20
+    },
+    {
+        "title": "Action",
+        "id": "action",
+        "url": "http://localhost:3000/category/action/",
+        "count": 1711
+    },
+    {
+        "title": "Adult",
+        "id": "adult",
+        "url": "http://localhost:3000/category/adult/",
+        "count": 271
+    },
+    {
+        "title": "Adventure",
+        "id": "adventure",
+        "url": "http://localhost:3000/category/adventure/",
+        "count": 906
+    },
+    {
+        "title": "Animation",
+        "id": "animation",
+        "url": "http://localhost:3000/category/animation/",
+        "count": 377
+    },
+    {
+        "title": "Asian",
+        "id": "asian",
+        "url": "http://localhost:3000/category/asian/",
+        "count": 397
+    },
+    {
+        "title": "Biography",
+        "id": "biography",
+        "url": "http://localhost:3000/category/biography/",
+        "count": 239
+    },
+    {
+        "title": "Bollywood",
+        "id": "bollywood",
+        "url": "http://localhost:3000/category/bollywood/",
+        "count": 284
+    },
+    {
+        "title": "CHE",
+        "id": "che",
+        "url": "http://localhost:3000/category/che/",
+        "count": 0
+    },
+    {
+        "title": "Comedy",
+        "id": "comedy",
+        "url": "http://localhost:3000/category/comedy/",
+        "count": 1331
+    },
+    {
+        "title": "Country",
+        "id": "country",
+        "url": "http://localhost:3000/category/country/",
+        "count": 12
+    },
+    {
+        "title": "Crime",
+        "id": "crime",
+        "url": "http://localhost:3000/category/crime/",
+        "count": 789
+    },
+    {
+        "title": "cube trilogy",
+        "id": "cube-trilogy",
+        "url": "http://localhost:3000/category/cube-trilogy/",
+        "count": 3
+    },
+    {
+        "title": "Documentary",
+        "id": "documentary",
+        "url": "http://localhost:3000/category/documentary/",
+        "count": 30
+    },
+    {
+        "title": "Drama",
+        "id": "drama",
+        "url": "http://localhost:3000/category/drama/",
+        "count": 2279
+    },
+    {
+        "title": "Family",
+        "id": "family",
+        "url": "http://localhost:3000/category/family/",
+        "count": 230
+    },
+    {
+        "title": "Fancy",
+        "id": "fancy",
+        "url": "http://localhost:3000/category/fancy/",
+        "count": 20
+    },
+    {
+        "title": "Fantasy",
+        "id": "fantasy",
+        "url": "http://localhost:3000/category/fantasy/",
+        "count": 401
+    },
+    {
+        "title": "History",
+        "id": "history",
+        "url": "http://localhost:3000/category/history/",
+        "count": 173
+    },
+    {
+        "title": "Horror",
+        "id": "horror",
+        "url": "http://localhost:3000/category/horror/",
+        "count": 611
+    },
+    {
+        "title": "Ip Man Trilogy",
+        "id": "ip-man-trilogy",
+        "url": "http://localhost:3000/category/ip-man-trilogy/",
+        "count": 3
+    },
+    {
+        "title": "Marrying The Mafia Pentalogy",
+        "id": "marrying-the-mafia-pentalogy",
+        "url": "http://localhost:3000/category/marrying-the-mafia-pentalogy/",
+        "count": 5
+    },
+    {
+        "title": "Martial",
+        "id": "martial",
+        "url": "http://localhost:3000/category/martial/",
+        "count": 12
+    },
+    {
+        "title": "Marvel Universe",
+        "id": "marvel-universe",
+        "url": "http://localhost:3000/category/marvel-universe/",
+        "count": 22
+    },
+    {
+        "title": "Music",
+        "id": "music",
+        "url": "http://localhost:3000/category/music/",
+        "count": 20
+    },
+    {
+        "title": "Musical",
+        "id": "musical",
+        "url": "http://localhost:3000/category/musical/",
+        "count": 61
+    },
+    {
+        "title": "Mystery",
+        "id": "mystery",
+        "url": "http://localhost:3000/category/mystery/",
+        "count": 390
+    },
+    {
+        "title": "Noir",
+        "id": "noir",
+        "url": "http://localhost:3000/category/noir/",
+        "count": 1
+    },
+    {
+        "title": "Romance",
+        "id": "romance",
+        "url": "http://localhost:3000/category/romance/",
+        "count": 558
+    },
+    {
+        "title": "Sci-Fi",
+        "id": "sci-fi",
+        "url": "http://localhost:3000/category/sci-fi/",
+        "count": 294
+    },
+    {
+        "title": "Science Fiction",
+        "id": "science-fiction",
+        "url": "http://localhost:3000/category/science-fiction/",
+        "count": 1
+    },
+    {
+        "title": "Special Package",
+        "id": "special-package",
+        "url": "http://localhost:3000/category/special-package/",
+        "count": 19
+    },
+    {
+        "title": "Sport",
+        "id": "sport",
+        "url": "http://localhost:3000/category/sport/",
+        "count": 72
+    },
+    {
+        "title": "Stephen Chow",
+        "id": "stephen-chow",
+        "url": "http://localhost:3000/category/stephen-chow/",
+        "count": 4
+    },
+    {
+        "title": "Suspense",
+        "id": "suspense",
+        "url": "http://localhost:3000/category/suspense/",
+        "count": 3
+    },
+    {
+        "title": "Thriller",
+        "id": "thriller",
+        "url": "http://localhost:3000/category/thriller/",
+        "count": 801
+    },
+    {
+        "title": "TV Movie",
+        "id": "tv-movie",
+        "url": "http://localhost:3000/category/tv-movie/",
+        "count": 2
+    },
+    {
+        "title": "Uncategorized",
+        "id": "uncategorized",
+        "url": "http://localhost:3000/category/uncategorized/",
+        "count": 828
+    },
+    {
+        "title": "War",
+        "id": "war",
+        "url": "http://localhost:3000/category/war/",
+        "count": 106
+    },
+    {
+        "title": "Western",
+        "id": "western",
+        "url": "http://localhost:3000/category/western/",
+        "count": 18
+    },
+    {
+        "title": "X-men",
+        "id": "x-men",
+        "url": "http://localhost:3000/category/x-men/",
+        "count": 9
+    }
+]

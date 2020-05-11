@@ -1,0 +1,68 @@
+{
+    "title": "Movies",
+    "thispage": 1,
+    "totalCount": 302,
+    "nextpage": "https://moviechannel.herokuapp.com/movies/page/2",
+    "results": [      
+        {
+            "id": 51679,
+            "title": "Hacked",
+            "rate": "4.2",
+            "type": "movie",
+            "year": 2020,
+            "link": "https://moviechannel.herokuapp.com/hacked2020/",
+            "slug": "hacked2020",
+            "img": "https://channelmyanmar.org/wp-content/uploads/2020/05/HACK-139x200.jpg",
+            "overview": "Hacked(2020)ဆမ်မီရာဆိုတဲ့ကောင်မလေးက ဖက်ရှင်မဂ္ဂဇင်း အယ်ဒီတာတစ်ယောက်ပါ...စွဲမက်ဖွယ် ခန္ဓာကိုယ်ကို ပိုင်ဆိုင်ထားပြီး သိပ်လှတဲ့ကောင်မလေးဖြစ်တဲ့အပြင် လုပ်ငန်းပိုင်းမှာလည်းအောင်မြင်မှုရလေတော့ခုခေတ် Social Media ကိုလည်း လူသိများစေဖို့ နည်းလမ်းစုံအသုံးပြုတတ်တယ်...တစ်နေတော့ သူမကိုကောင်လေးတစ်ယောက်က ကြွေသွားတယ်...ဒီကောင်လေးက အသက်သာငယ်ပေမဲ့ အရမ်းတော်တဲ့ဟက်ကာတစ်ယောက်...ပိုင်ဆိုင်ဖို့အတ္တတစ်ခုသာသိတဲ့ ဒီကောင်လေးဟာ သူအကျွမ်းကျင်ဆုံးဟက်ကာပညာရပ်တွေနဲ့စောင့်ထိန်းအပ်တဲ့လောကဝတ်တွေကိုဘေးချိတ်ပြီး နည်းမျိုးစုံသုံးကာ ဆမ်မီရာကို လိုက်ပါတော့တယ်...ဆမ်မီရာတစ်ယောက်ကို ဒီကောင်လေး ဘယ်လိုတွေ ချဉ်းကပ်လဲ...သူချဉ်းကပ်တဲ့နည်းတွေကရော ဒီကောင်မလေးအတွက်ဘယ်လိုခံစားရမလဲ...ကောင်မလေးကရော ဘယ်လိုတွေဖြစ်မလဲ...သူမကရော ဒီလိုမျိုးချဉ်းကပ်တဲ့ကောင်လေးကိုဘယ်လိုတုန့်ပြန်မလဲ...ဒီဇာတ်ကားက ဒီဘက်ခေတ်နဲ့အတော်လိုက်ဖက်တယ်လို့တောင်ပြောလို့ရပါတယ်...မိန်းကလေးတွေအတွက်ပညာပေးကားဖြစ်သလိုဆောင်ရန်ရှောင်ရန်လေးတွေကို ခပ်မိုက်မိုက်ပြသွားတာပါ....အညွှန်းနှင့်ဘာသာပြန်သူကတော့ Thaik San ပဲဖြစ်ပါတယ်....File Size : (1.02GB) and (526 MB)Quality : WEB-DL 720pFormat…mp4Duration…01:58:00Genre : ThrillerSubtitle : Myanmar Subtitle (Hard Sub)Translated by Thaik SanEncoded by Phyo Pyae "
+        },
+        {
+            "id": 26390,
+            "quality": "Blu-Ray 720p",
+            "title": "Fast & Furious 6 ",
+            "rate": "7.1",
+            "type": "movie",
+            "year": 62013,
+            "link": "https://moviechannel.herokuapp.com/fast-furious-6-2013/",
+            "slug": "fast-furious-6-2013",
+            "img": "https://channelmyanmar.org/wp-content/uploads/2017/12/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_SY1000_CR006741000_AL_-135x200.jpg",
+            "overview": "Hobbs has Dominic and Brian reassemble their crew to take down a team of mercenaries: Dominic unexpectedly gets convoluted also facing his presumed deceased girlfriend, Letty. File Size : (0.99 GB)Quality : Blu-Ray 720pRunning Time : 2hr 10minFormat : Mp4Genre :Action, Crime, ThrillerSubtitle : Myanmar Subtitle (Hard Sub)Source : 1080p BluRay x264-SPARKSEncoded by Thanhtike Zaw "
+        },
+        {
+            "id": 26385,
+            "quality": "Blu-Ray 720p",
+            "title": "Fast & Furious ",
+            "rate": "6.6",
+            "type": "movie",
+            "year": 2009,
+            "link": "https://moviechannel.herokuapp.com/fast-furious-2009/",
+            "slug": "fast-furious-2009",
+            "img": "https://channelmyanmar.org/wp-content/uploads/2017/12/MV5BMTQwNDA2MTg3Nl5BMl5BanBnXkFtZTcwNTg3MzIyMg@@._V1_-137x200.jpg",
+            "overview": "When a crime brings them back to L.A., fugitive ex-con Dom Toretto reignites his feud with agent Brian O'Conner. But as they are forced to confront a shared enemy, Dom and Brian must give in to an uncertain new trust if they hope to outmaneuver him. And the two men will find the best way to get revenge: push the ..."
+        },
+        {
+            "id": 26378,
+            "quality": "Blu-Ray 720p",
+            "title": "The Fast and the Furious ",
+            "rate": "6.7",
+            "type": "movie",
+            "year": 2001,
+            "link": "https://moviechannel.herokuapp.com/the-fast-and-the-furious-2001/",
+            "slug": "the-fast-and-the-furious-2001",
+            "img": "https://channelmyanmar.org/wp-content/uploads/2017/12/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR006721000_AL_-134x200.jpg",
+            "overview": "Domenic Toretto is a Los Angeles street racer suspected of masterminding a series of big-rig hijackings. When undercover cop Brian O'Conner infiltrates Toretto's iconoclastic crew, he falls for Toretto's sister and must choose a side: the gang or the LAPD. File Size : (0.99 GB)Quality : Blu-Ray 720pRunning Time : 1hr 46minFormat : Mp4Genre :Action, Crime, ThrillerSubtitle : Myanmar Subtitle (Hard ..."
+        },
+       
+        {
+            "id": 51221,
+            "quality": "Blu-Ray 1080p 5.1 CH",
+            "title": "Batman Begins ",
+            "rate": "8.2",
+            "type": "movie",
+            "year": 2005,
+            "link": "https://moviechannel.herokuapp.com/batman-begins-2005-2/",
+            "slug": "batman-begins-2005-2",
+            "img": "https://channelmyanmar.org/wp-content/uploads/2020/05/batman.begins-150x200.jpg",
+            "overview": "Batman Begins (2005)=================#UnicodeIMDb Rating 8.2/10 ရထားပြီး voting အရေအတွက်ဟာ 1,257,970 ထိရှိနေခဲ့ပါတယ်။June 17 2005 မှာထွက်ရှိခဲ့ပြီး Christopher Nolan ရိုက်ကူးခဲ့တဲ့ Bat Man: Begins ဟာ ရုံဝင်ငွေ 374.2 million ရရှိခဲ့ပြီး DC Comics ကဇတ်ကောင်ကို အခြေခံထားတဲ့ super Hero ရုပ်ရှင်ကားပဲဖြစ်ပါတယ်။ Bat Man လို့ပြောလိုက်တာနဲ့ Christian Bale ကိုမျက်စိထဲပြေးမြင်မိကြမှာပါ။ အရင်ကလဲ Bat Man ဇတ်ကောင်ကို အလီလီရိုက်ကူးခဲ့ကြပေမဲ့ Christian Bale ကိုမမှိခဲ့ကြပါဘူး။ ဒီကားကတော့ The greatest Detective လို့လူသိများတဲ့ Bat Man စတင်ဖြစ်ပေါ်လာပုံကိုရိုက်ကူးထားတဲ့ကားတစ်ကားဖြစ်ပါတယ်။ဇတ်လမ်းအကျည်းကတော့ Bat Man ဖြစ်လာမယ့် Bruce Wayne ဟာငယ်ငယ်ကလင်းနို့ကြောက်တတ်ပါတယ်။ သူ့အဖေ ..."
+        }
+    ]
+}
