@@ -81,6 +81,15 @@ const x = Xray({
                 return;
             }
         },
+        upstream: function(value) {
+            if (typeof value === 'string') {
+                if (value.includes("https://upstream.to")) {
+                    // var url = getUrl(value);
+                    return value;
+                }
+                return;
+            }
+        },
         host: function(value) {
             if (typeof value === 'string') {
                 var url = value.replace("https://", "").trim();
