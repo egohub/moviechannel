@@ -41,5 +41,22 @@ router.get('/mega/:id', (req, res) => {
     let init = $('.row >  script');
     var link = $(init).find('a').attr('href');
     res.send(link)
-})
+});
+
+router.get('/upstream', function(req, res) {
+    var url = req.query.url;
+    var regex = /https:\/\/(.*?).mp4/g;
+    request(url, function(error, response, body) {
+        let results = {};
+        let $ = cheerio.load(body , {xmlMode: true});
+        let str = $('body').html()
+        results.title = $('.videoname span').text()
+        let m = regex.exec(str)
+        results.url = m[0];
+        results.watch = 'https://egohub.github.io/video/?video='+m[0]
+        console.log(results);
+        
+        res.send(results);
+    });
+});
 module.exports = router;
