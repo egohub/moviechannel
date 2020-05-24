@@ -62,7 +62,19 @@ angular.module('app.routes', ['ionicUIRouter'])
       }
     }
   })
-
+  .state('tabs.stream', {
+    url: '/stream/:id',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/stream.html',
+        controller: 'streamCtrl'
+      },
+      'tab2': {
+        templateUrl: 'templates/stream.html',
+        controller: 'streamCtrl'
+      }
+    }
+  })
   .state('tabs.movies', {
     url: '/movies/:id',
     views: {
