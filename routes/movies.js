@@ -81,6 +81,7 @@ router.get('/movie/:id', function(req, res) {
             download: x('li.elemento', [{ size: '.c', site: '.b | host', quality: '.e', url: 'a@href' }]),
             mega: x('li.elemento', [{ url: 'a@href | mega' }]),
             yadi: x('li.elemento', [{ url: 'a@href | yadi', id: 'a@href | yadi  |yadiId' }]),
+            upstream: x('li.elemento', [{ url: 'a@href | upstream' }]),
             relate: x('#slider1 div div', [{ link: 'a@href', title: 'img@alt', img: 'img@src' }])
         })
         .then(function(result) {
