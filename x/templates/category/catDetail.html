@@ -89,7 +89,8 @@
                 <ion-list>
                     <a class="item-icon-left assertive item" href="{{p.url}}" target="_blank" ng-repeat="p in data.mega"><i class="icon ion-ios-play"></i>Mega.nz (Only PC)</a>
                     <a class="item-icon-left assertive item" ui-sref="tabs.watch({id:p.url})" ng-repeat="p in data.yadi"><i class="icon ion-ios-play"></i>Yandex (PC and Mobile)</a>
-                </ion-list>
+                    <a class="item-icon-left assertive item" ui-sref="tabs.stream({id:p.url})" ng-repeat="p in data.upstream"><i class="icon ion-ios-play"></i>Upstream (PC and Mobile)</a>
+              </ion-list>
             </div>
             <div class="card" ng-switch-when="tab4">
                 <div class="spacer" style="width: 300px; height: 15px;"></div>
