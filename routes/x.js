@@ -11,7 +11,7 @@ const x = Xray({
             return typeof value === 'string' ? value.replace(/\n|\r\n?/g, '') : value
         },
         replace: function(value) {
-            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', 'http://localhost:3000/movie/') : value
+            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', 'http://moviechannel.herokuapp.com/movie/') : value
         },
         change: function(value) {
             return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', 'http://localhost:3000/') : value
@@ -34,7 +34,12 @@ const x = Xray({
             }
         },
         number: function(value) {
-            return typeof value === 'string' ? Number(value.replace(/\D+/g, '')) : value
+            if (typeof value === 'string') {
+                let refine = value.replace(/\D+/g, '');
+                let refine2 = Number(refine.substr(-4));
+                console.log(refine2);
+                return refine2;
+            }
         },
         fix2: function(value) {
             if (typeof value === 'string') {
@@ -118,6 +123,8 @@ const x = Xray({
                     url = "YoteshinPortal";
                 } else if (url.includes("mediafire.com")) {
                     url = "Mediafire";
+                } else if (url.includes("usersdrive.com")) {
+                    url = "Usersdrive";
                 };
                 return url;
             }
