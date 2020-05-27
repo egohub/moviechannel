@@ -16,7 +16,7 @@ router.get('/post', (req, res, next) => {
 });
 
 router.get('/movies', function(req, res, next) {
-    x(baseUrl, {
+    x(process.env.movies  + process.env.s, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
             totalCount: '.paginado ul li:last-child a@href | number',
