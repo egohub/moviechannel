@@ -42,7 +42,7 @@ router.get('/movies', function(req, res, next) {
 
 router.get('/movies/page/:id', function(req, res) {
 
-    let url = pageUrl + req.params.id;
+    let url = process.env.movies + req.params.id + process.env.s;
     x(url, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
