@@ -14,11 +14,13 @@ let movies = require('./routes/movies');
 let category = require('./routes/category');
 let yandex = require('./routes/yandex');
 let xxx = require('./routes/xxx');
+let zmovies = require('./routes/zmovies');
 
 app.use(movies);
 app.use(category);
 app.use(yandex);
 app.use(xxx);
+app.use(zmovies);
 
 const port = process.env.PORT || 3000;
 
