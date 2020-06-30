@@ -19,6 +19,8 @@ router.get('/movies', function(req, res, next) {
     x(process.env.base  + process.env.s, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
+            page : '.paginado ul li.dd a | number',
+            total_page: '.paginado ul li:last-child a@href | number',
             totalCount: '.paginado ul li:last-child a@href | number',
             nextpage: '.paginado ul li.dd a | fix2',
             results: x('.peliculas .items .item', [{
@@ -46,6 +48,8 @@ router.get('/movies/page/:id', function(req, res) {
     x(url, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
+            page : '.paginado ul li.dd a | number',
+            total_page: '.paginado ul li:last-child a@href | number',
             totalCount: '.paginado ul li:last-child a@href | number',
             nextpage: '.paginado ul li.dd a | fix2',
             results: x('.peliculas .items .item', [{
@@ -58,6 +62,7 @@ router.get('/movies/page/:id', function(req, res) {
                 link: ' a@href | replace',
                 slug: 'a@href | slug',
                 img: '.image img@src',
+                image : '.image img@src',
                 overview: '.ttx | trim'
             }])
         })
@@ -71,6 +76,7 @@ router.get('/movie/:id', function(req, res) {
     x(base + req.params.id, {
             title: '.fix img@alt | regex',
             img: '.fix img@src',
+            image:  '.fix img@src',
             description: '#cap1',
             category: 'i.limpiar',
             uploadDate: 'meta[itemprop="uploadDate"]@content',
