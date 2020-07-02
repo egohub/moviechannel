@@ -77,9 +77,12 @@ router.get('/movie/:id', function(req, res) {
             title: '.fix img@alt | regex',
             img: '.fix img@src',
             image:  '.fix img@src',
+            rate: '.imdb_r .a span',
+            releaseDate: 'i[itemprop="datePublished"]',
+            duration: 'i[itemprop="duration"]',
+            uploadDate: 'meta[itemprop="uploadDate"]@content',
             description: '#cap1',
             category: 'i.limpiar',
-            uploadDate: 'meta[itemprop="uploadDate"]@content',
             embedUrl: 'meta[itemprop="embedUrl"]@content',
             director: '#single div[itemprop="director"] meta@content',
             actors: x('div[itemprop="actors"]', ['meta[itemprop="name"]@content']),
@@ -94,6 +97,33 @@ router.get('/movie/:id', function(req, res) {
 
             res.send(result);
         });
+});
+router.get('/search', function(req, res) {
+    let query = req.query.s;
+    let url = base + 'page/1/?s=' + encodeURI(query);
+    x(url, {
+        title: 'title',
+        thispage: '.paginado ul li.dd a | number',
+        totalCount: '.paginado ul li:last-child a@href | number',
+        nextpage: '.paginado ul li.dd a | fix2',
+        results: x('.peliculas .items .item', [{
+            id: '@id | number',
+            quality: '.calidad2',
+            title: '.image img@alt | regex',
+            rate: '.imdbs',
+            type: '.typepost',
+            year: '.image img@alt | number', //'.fixyear .year',
+            link: ' a@href | replace',
+            slug: 'a@href | slug',
+            img: '.image img@src',
+            overview: '.ttx | trim'
+        }])
+    })(function(err, obj) {
+        if (err) {
+            res.send(err);
+        }
+        res.send(obj);
+    });
 });
 
 module.exports = router;
