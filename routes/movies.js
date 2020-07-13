@@ -1,22 +1,15 @@
 const x = require('./x');
 const router = require('express').Router();
 
-const baseUrl = 'https://channelmyanmar.org/movies/',
-    base = 'https://channelmyanmar.org/',
-    pageUrl = 'https://channelmyanmar.org/movies/page/';
 
 
 // router.get('/', function(req, res) {
 //     res.send('Hello  Movies');
 // });
 
-router.get('/post', (req, res, next) => {
-    let url = baseUrl || baseUrl + req.query.id;
-    res.send(url);
-});
 
 router.get('/movies', function(req, res, next) {
-    x(process.env.base  + process.env.s, {
+    x(process.env.base  + process.env.slug, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
             page : '.paginado ul li.dd a | number',
@@ -44,7 +37,7 @@ router.get('/movies', function(req, res, next) {
 
 router.get('/movies/page/:id', function(req, res) {
 
-    let url = process.env.movies + req.params.id + process.env.s;
+    let url = process.env.movies + req.params.id + process.env.slug;
     x(url, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
@@ -72,8 +65,8 @@ router.get('/movies/page/:id', function(req, res) {
 });
 
 router.get('/movie/:id', function(req, res) {
-    console.log(base + req.params.id);
-    x(base + req.params.id, {
+
+    x(process.env.mainUrl + req.params.id + process.env.slug, {
             title: '.fix img@alt | regex',
             img: '.fix img@src',
             image:  '.fix img@src',
@@ -100,7 +93,7 @@ router.get('/movie/:id', function(req, res) {
 });
 router.get('/search', function(req, res) {
     let query = req.query.s;
-    let url = base + 'page/1/?s=' + encodeURI(query);
+    let url = process.env.mainUrl + 'page/1/?s=' + encodeURI(query);
     x(url, {
         title: 'title',
         thispage: '.paginado ul li.dd a | number',
