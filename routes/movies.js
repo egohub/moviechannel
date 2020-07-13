@@ -8,7 +8,7 @@ const router = require('express').Router();
 // });
 
 
-router.get('/movies', function(req, res, next) {
+router.get('/movies/page/1', function(req, res, next) {
     x(process.env.base  + process.env.slug, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
@@ -83,7 +83,7 @@ router.get('/movie/:id', function(req, res) {
             download: x('li.elemento', [{ size: '.c', site: '.b | host', quality: '.e', url: 'a@href' }]),
             mega: x('li.elemento', [{ url: 'a@href | mega' }]),
             yadi: x('li.elemento', [{ url: 'a@href | yadi', id: 'a@href | yadi  |yadiId' }]),
-            upstream: x('li.elemento', [{ url: 'a@href | upstream' }]),
+            upstream: x('li.elemento', [{ url: 'a@href | upstream', embed: 'a@href | upstreamEmbed' }]),
             relate: x('#slider1 div div', [{ link: 'a@href', title: 'img@alt', img: 'img@src' }])
         })
         .then(function(result) {
