@@ -8,7 +8,7 @@ const router = require('express').Router();
 // });
 
 
-router.get('/movies/page/1', function(req, res, next) {
+router.get('/movies', function(req, res, next) {
     x(process.env.base  + process.env.slug, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
@@ -37,7 +37,14 @@ router.get('/movies/page/1', function(req, res, next) {
 
 router.get('/movies/page/:id', function(req, res) {
 
-    let url = process.env.movies + req.params.id + process.env.slug;
+    let url = '';
+    if (req.params.id == 1) {
+        url = process.env.base;
+        console.log(url);
+    } else {
+        url = process.env.movies + req.params.id + process.env.slug;
+        console.log(url);
+    }
     x(url, {
             title: 'title',
             thispage: '.paginado ul li.dd a | number',
