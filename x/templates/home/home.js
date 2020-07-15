@@ -16,7 +16,7 @@ function HomeCtrl($scope, $ionicLoading, $log, $timeout, config, DataLoader) {
         });
 
         // Get all of our posts
-        DataLoader.get('/movies/').then(function(response) {
+        DataLoader.get('/movies/page/1').then(function(response) {
             $ionicLoading.hide();
             $scope.posts = response.data.results;
 
