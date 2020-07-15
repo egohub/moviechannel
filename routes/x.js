@@ -11,10 +11,10 @@ const x = Xray({
             return typeof value === 'string' ? value.replace(/\n|\r\n?/g, '') : value
         },
         replace: function(value) {
-            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', 'http://moviechannel.herokuapp.com/movie/') : value
+            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', process.env.thisUrl+'movie/') : value
         },
         change: function(value) {
-            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', 'http://localhost:3000/') : value
+            return typeof value === 'string' ? value.replace('https://channelmyanmar.org/', process.env.thisUrl) : value
         },
         category: function(value, i) {
             if (typeof value === 'string') {
@@ -91,6 +91,16 @@ const x = Xray({
                 if (value.includes("https://upstream.to")) {
                     // var url = getUrl(value);
                     return value;
+                }
+                return;
+            }
+        },
+        upstreamEmbed: function(value) {
+            if (typeof value === 'string') {
+                if (value.includes("https://upstream.to/")) {
+                    var urls = value.replace("https://upstream.to/", "https://upstream.to/embed-");
+                    var url = urls + ".html";
+                    return url;
                 }
                 return;
             }
