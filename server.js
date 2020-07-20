@@ -15,12 +15,14 @@ let category = require('./routes/category');
 let yandex = require('./routes/yandex');
 let xxx = require('./routes/xxx');
 let zmovies = require('./routes/zmovies');
+let soccer = require('./routes/soccer');
 
 app.use(movies);
 app.use(category);
 app.use(yandex);
 app.use(xxx);
 app.use(zmovies);
+app.use(soccer);
 
 const port = process.env.PORT || 3000;
 
