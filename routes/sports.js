@@ -7,7 +7,7 @@ exports.soccerOdd = async function() {
 
     try {
 
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
         const page = await browser.newPage();
         await page.goto('http://www.mbet369.com/_view/MOdds369.aspx');
         await page.waitFor(2500);
@@ -142,7 +142,7 @@ exports.streamLink = async id => {
     let ret = [];
     try {
         let url = 'https://555sports.com/detail/' + id;
-        const browser = await puppeteer.launch()
+        const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
         const page = await browser.newPage()
         await page.goto(url);
         const content = await page.content();
