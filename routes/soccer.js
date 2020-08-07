@@ -17,9 +17,7 @@ app.get('/api/sports/detail/:id', function(req, res) {
             let m3u = data.match(/m3u8Url:"([\s\S]*?)"/)[1];
             let m3u8 = m3u.replace('\\u002F\\u002F', '//')
                           .replace('\\u002Flive\\u002F', '/live/');
-            let test = getm3u8(data);
-            console.log('test '+ test);
-            console.log(m3u8);
+            
             let league = $('.top-box .name').text();
             let home = $('.name-box .home').text();
             let away = $('.name-box .away').text();
