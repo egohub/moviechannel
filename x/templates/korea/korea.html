@@ -1,16 +1,33 @@
-<ion-view title="Korea" hide-back-button="true" id="page2">
-    <ion-content padding="false" class="has-header">
-        <ion-refresher on-refresh="doRefresh()"></ion-refresher>
-
-        <ion-list id="movies-list4">
-            <ion-item class="item-thumbnail-left" id="movies-list-item23" ui-sref="tabs.koreaWatch({id:m.id})" ng-repeat="m in posts">
-                <img ng-src="{{m.img}}">
-                <h2 class="kortext">{{m.title}}</h2>
-                <p style="white-space:normal;" class="titletext">{{m.year}}</p>
-            </ion-item>
-        </ion-list>
-
-        <ion-infinite-scroll ng-if="moreDataExists()" on-infinite="loadMore()" distance="1%" immediate-check="false">
-        </ion-infinite-scroll>
+<ion-view view-title="">
+    <ion-content scroll="true">
+        <ion-slide-box slide-tabs-scrollable="false" show-pager="false" ion-slide-tabs>
+            <ion-slide ion-slide-tab-label="Soccer">
+                <ion-list id="movies-list4">
+                    <ion-item class="" id="movies-list-item23" ui-sref="tabs.koreaWatch({id:m.id})" ng-repeat="m in soccer">
+                        <!-- <img ng-src="{{m.img}}"> -->
+                        <h2 class="kortext">{{m.league}}</h2>
+                        <p style="white-space:normal;" class="titletext">{{m.home}} vs {{m.away}}</p>
+                    </ion-item>
+                </ion-list>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="Basketball">
+                <ion-list id="movies-list4">
+                    <ion-item class="" id="movies-list-item23" ui-sref="tabs.koreaWatch({id:m.id})" ng-repeat="m in basketball">
+                        <!-- <img ng-src="{{m.img}}"> -->
+                        <h2 class="kortext">{{m.league}}</h2>
+                        <p style="white-space:normal;" class="titletext">{{m.home}} vs {{m.away}}</p>
+                    </ion-item>
+                </ion-list>
+            </ion-slide>
+            <ion-slide ion-slide-tab-label="<b>Games</b>">
+                <ion-list id="movies-list4">
+                    <ion-item class="" id="movies-list-item23" ui-sref="tabs.koreaWatch({id:m.id})" ng-repeat="m in games">
+                        <!-- <img ng-src="{{m.img}}"> -->
+                        <h2 class="kortext">{{m.esport}}</h2>
+                        <p style="white-space:normal;" class="titletext">{{m.home}} vs {{m.away}}</p>
+                    </ion-item>
+                </ion-list>
+            </ion-slide>
+        </ion-slide-box>
     </ion-content>
 </ion-view>
