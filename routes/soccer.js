@@ -8,8 +8,9 @@ const watchUrl = 'https://egohub.github.io/watch/?video=';
 
 app.get('/api/sports/detail/:id', function(req, res) {
     let id = req.params.id;
-    
-    apiJs.get(process.env.sportUrl+'/detail/'+id).then(response  => {
+    console.log(process.env.sportUrl+'detail/'+id);
+
+    apiJs.get(process.env.sportUrl+'detail/'+id, { pageWait: 2000 }).then(response => {
         if (response.statusCode === 200) {
             let data = response.body;
             let $  = cheerio.load(response.body);
@@ -50,7 +51,7 @@ app.get('/api/sports', (req, res)=> {
         if(foots){
             all.soccer.push({
                 id:src,
-                goto : process.env.thisUrl+'/api/sports/'+$(i).attr('href'),
+                goto : process.env.thisUrl+'api/sports'+$(i).attr('href'),
                 league : $(i).find('.football .top-box .name').text(),
                 time : $(i).find('.football .bottom-box .text').text().trim(),
                 home : $(i).find('.football .name-box .home').text(),
@@ -61,7 +62,7 @@ app.get('/api/sports', (req, res)=> {
             if(egame){
                 all.games.push({
                 id:src,
-                goto : process.env.thisUrl+'/api/sports/'+$(i).attr('href'),
+                goto : process.env.thisUrl+'api/sports'+$(i).attr('href'),
                 esport : $(i).find('.game .top-box .name').text(),
                 home : $(i).find('.game .name-box .home').text(),
                 away : $(i).find('.game .name-box .away').text()
@@ -70,7 +71,7 @@ app.get('/api/sports', (req, res)=> {
             if(baskets){
                 all.basketball.push({
                 id:src,
-                goto : process.env.thisUrl+'/api/sports/'+$(i).attr('href'),
+                goto : process.env.thisUrl+'api/sports'+$(i).attr('href'),
                 league : $(i).find('.basketball .top-box .name').text(),
                 home : $(i).find('.basketball .name-box .home').text(),
                 away : $(i).find('.basketball .name-box .away').text()
@@ -79,7 +80,7 @@ app.get('/api/sports', (req, res)=> {
             if(tenni){
                 all.tennis.push({
                 id:src,
-                goto : process.env.thisUrl+'/api/sports/'+$(i).attr('href'),
+                goto : process.env.thisUrl+'api/sports'+$(i).attr('href'),
                 title : $(i).find('.tennis .top-box .name').text(),
                 home : $(i).find('.tennis .name-box .home').text(),
                 away : $(i).find('.tennis .name-box .away').text()
