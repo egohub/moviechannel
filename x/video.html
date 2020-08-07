@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuck</title>
+    <link href="https://egohub.github.io/watch/lib/video-js.css" rel="stylesheet">
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+    <link href="https://egohub.github.io/watch/lib/sea.css" rel="stylesheet">
+    <link href="https://egohub.github.io/watch/lib/fantasy.css" rel="stylesheet">
+    <link href="https://egohub.github.io/watch/lib/player-logo.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71010419-2"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167278162-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167278162-1');
+    </script>
+
+    <style>
+        body {
+            background: -webkit-linear-gradient(left top, #3F51B5, #673AB7);
+            background: -o-linear-gradient(bottom right, #3F51B5, #673AB7);
+            background: -moz-linear-gradient(bottom right, #3F51B5, #673AB7);
+            background: linear-gradient(to bottom right, #3F51B5, #673AB7);
+        }
+        
+        .container {
+            padding: 0px;
+        }
+        
+        .video-js .vjs-control-bar {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video id='hls-example' class="video-js vjs-theme-fantasy vjs-big-play-centered" width="100%" height="100%"></video>
+
+    </div>
+
+    <!-- JS code -->
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://egohub.github.io/watch/lib/videojs-contrib-hls.js"></script>
+    <script src="https://egohub.github.io/watch/lib/video.js"></script>
+    <script src="https://egohub.github.io/watch/lib/video-logo.js"></script>
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+            var results = regex.exec(location.search);
+            return results === null ?
+                "" :
+                decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        var embed = getUrlParameter("video");
+        var player = videojs('hls-example', {
+            poster: 'https://picsum.photos/800/450',
+            controls: true,
+            loop: true,
+            fluid: true,
+            playbackRates: [1, 1.5, 2, 3]
+        });
+        player.src({
+            type: 'application/x-mpegURL',
+            src: embed
+        });
+        player.logo({
+            image: 'https://github.com/egohub/watch/raw/gh-pages/xray.png',
+            width: 20,
+            fadeDelay: null
+        });
+        // player.play();
+    </script>
+</body>
+
+</html>
