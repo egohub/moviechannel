@@ -14,10 +14,12 @@
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "fs": "^0.0.1-security",
+        "proxycrawl": "^2.0.1",
         "puppeteer": "^5.2.0",
         "request": "^2.88.2",
         "serve-favicon": "^2.5.0",
         "sync-request": "^6.1.0",
+        "unraw": "^2.0.0",
         "x-ray": "^2.3.4"
     }
 }
